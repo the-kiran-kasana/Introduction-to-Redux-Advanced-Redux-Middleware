@@ -1,12 +1,12 @@
-import {createSlice , createAsyncThunk} from "@reduxjs/toolkit"
+import {createSlice , createAsyncThunk} from "@reduxjs/toolkit"(
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
-import {auth} from "../../utity/firebase"
+import {auth} from "../utity/firebase"
 
 
 //sign
 export const signupUser = createAsyncThunk(
 
-   "auth/signupUser",
+   (
    async({email,password}) , {rejectwithValue}) => {
         try {
 

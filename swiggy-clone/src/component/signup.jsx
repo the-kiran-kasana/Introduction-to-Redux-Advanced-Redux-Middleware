@@ -14,7 +14,7 @@ function signup()
   const  handleSubmit(e) => {
     e.preventDefault();
 
-    if(!email || !password)
+    if(!email || !passwor
     {
       setFormError("fill form")
       return
@@ -32,7 +32,7 @@ function signup()
   return (
    <>
    <h1>signUp page</h1>
-   <form onSubmit={han dleSubmit}>
+   <form onSubmit={handleSubmit}>
     <input type="email"  placeholder="email" value={email} onChange = {(e) => setEmail(e.target.value)}>
     <input type="password"  placeholder="password" value={password} onChange = {(e) => setPassword(e.target.value)}>
 
